@@ -1,0 +1,27 @@
+{
+  "name": "sdet",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/brpdigital/sdet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/brpdigital/sdet/issues"
+  },
+  "homepage": "https://bitbucket.org/brpdigital/sdet#readme",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^14.5.4",
+    "cypress-xpath": "^2.0.1"
+  }
+}
+
