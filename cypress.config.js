@@ -27,7 +27,7 @@ module.exports = defineConfig({
       regions: [
         { region: "ca", language: "en" }
       ],
-      RUN_DESKTOP: true,
+      RUN_DESKTOP: false,
       checkTitle: false,
     },
   },
