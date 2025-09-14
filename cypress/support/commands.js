@@ -147,3 +147,21 @@ Cypress.Commands.add('validatePageTitle', (expectedTitle) => {
       expect(cleanText).to.eq(expectedTitle);
     });
 });
+
+
+Cypress.Commands.add('openMainMenu', (device, mobileBreakpoint, mobileMenuButtonXpath) => {
+  if (device.width <= mobileBreakpoint && mobileMenuButtonXpath) {
+    cy.log(`[MENU] Ensuring mobile menu is open for device: ${device.label}`);
+    cy.xpath(mobileMenuButtonXpath).then($btn => {
+      if ($btn.length) {
+        cy.log('[MENU] Mobile menu button found, clicking...');
+        cy.wrap($btn).should('be.visible').click();
+      }
+    });
+  }
+
+  if (device.width > mobileBreakpoint) {
+    cy.log(`[DESKTOP] Clicking brand logo for device: ${device.label}`);
+    cy.clickBrandLogo();
+  }
+});

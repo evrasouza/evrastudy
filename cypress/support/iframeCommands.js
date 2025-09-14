@@ -68,5 +68,9 @@ Cypress.Commands.add('fillIframeForm', (iframeSelector, data) => {
   cy.fillIframeFieldInput(iframeSelector, 'form_input_custom3', data.custom3);
   cy.fillIframeFieldSelect(iframeSelector, 'form_input_custom4', data.custom4);
   cy.fillIframeFieldInput(iframeSelector, 'form_input_custom5', data.custom5);
-  cy.clickIframeCheckboxes(iframeSelector, data.checkboxes);
+  //cy.clickIframeCheckboxes(iframeSelector, data.checkboxes);
+  // Only click checkboxes if region is not US
+  if (data.custom1 !== 'US' && Array.isArray(data.checkboxes)) {
+    cy.clickIframeCheckboxes(iframeSelector, data.checkboxes);
+  }
 });

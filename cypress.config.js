@@ -21,9 +21,9 @@ module.exports = defineConfig({
     env: {
       brand: "canam",
       regions: [
-        { region: "ca", language: "en" }, // region: 🇨🇦 language: 🇬🇧
+        // { region: "ca", language: "en" }, // region: 🇨🇦 language: 🇬🇧
         // { region: "ca", language: "fr" }, // region: 🇨🇦 language: 🇫🇷
-        // { region: "us", language: "en" }, // region: 🇺🇸 language: 🇬🇧
+        { region: "us", language: "en" }, // region: 🇺🇸 language: 🇬🇧
         // { region: "us", language: "es" }, // region: 🇺🇸 language: 🇪🇸
         // { region: "mx", language: "es" }, // region: 🇲🇽 language: 🇪🇸
         // { region: "be", language: "fr" }, // region: 🇧🇪 language: 🇫🇷
