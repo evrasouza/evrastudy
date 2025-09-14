@@ -37,7 +37,7 @@ module.exports = defineConfig({
         // { region: "se", language: "sv" }, // region: 🇸🇪 language: 🇸🇪
         // { region: "gb", language: "en" }  // region: 🇬🇧 language: 🇬🇧
       ],
-      RUN_DESKTOP: true,
+      RUN_DESKTOP: false,
       checkTitle: false,
     },
   },

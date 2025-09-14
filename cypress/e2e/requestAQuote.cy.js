@@ -10,6 +10,8 @@ const {
   baseUrl,
   landingPath,
   navbarFixture,
+  mobileMenuButtonXpath,
+  mobileBreakpoint,
 } = getEnvConfig();
 
 const iframeSelector = canamUI.iframeSelector;
@@ -43,6 +45,24 @@ describe(`Navigation flow to form submission - Brand: ${brand}`, () => {
       it('Should navigate to the form, fill it out, and validate the submission', function () {
         const navbarByLang = this.navbarByLang || {};
         const links = navbarByLang[language];
+
+        cy.get('@currentDevice').then((device) => {
+          if (device.width <= mobileBreakpoint && mobileMenuButtonXpath) {
+            cy.log(`[MENU] Ensuring mobile menu is open for device: ${device.label}`);
+            cy.xpath(mobileMenuButtonXpath).then($btn => {
+              if ($btn.length) {
+                cy.log('[MENU] Mobile menu button found, clicking...');
+                cy.wrap($btn).should('be.visible').click();
+              }
+            });
+          }
+
+          if (device.width > mobileBreakpoint) {
+            cy.log(`[DESKTOP] Clicking brand logo for device: ${device.label}`);
+            cy.clickBrandLogo();
+          }
+        });
+
         cy.log(`🔗 Testing: `);
         cy.clickMenuType(selectVehicleToGetAQuote.menuType)
         cy.clickModelByName(selectVehicleToGetAQuote.modelName);
