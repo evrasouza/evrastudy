@@ -1,96 +1,39 @@
 {
   "en": [
     {
-      "label": "SXS",
-      "url": "/off-road/{region}/{language}/models/sxs.html",
-      "title": "2025 SXS"
+      "label": "Models",
+      "url": "{region}/{language}/models.html",
+      "title": ""
     },
     {
-      "label": "ATV",
-      "url": "/off-road/{region}/{language}/models/atv.html",
-      "title": "Tough-Built ATVs"
+      "label": "Build & Price",
+      "url": "{region}/{language}/shopping-tools/customize-your-own.html",
+      "title": ""
     },
     {
-      "label": "3-Wheel Vehicles",
-      "url": "/on-road/{region}/{language}/models/3-wheel-vehicles.html",
-      "title": "Made to turn Heads"
+      "label": "Discover Ski-Doo",
+      "url": "/{region}/{language}/discover-ski-doo.html",
+      "title": ""
     },
     {
-      "label": "Motorcycles",
-      "url": "/on-road/{region}/{language}/models/motorcycles.html",
-      "title": "CAN-AM ALL-ELECTRIC MOTORCYCLES"
+      "label": "Owner Zone",
+      "url": "/{region}/{language}/owner-zone.html",
+      "title": ""
     },
     {
-      "label": "Accessories, Parts & Clothing",
-      "url": "/{region}/{language}/accessories-parts-apparel.html",
-      "title": "SXS and ATV Store"
-    },
-    {
-      "label": "Build your Can‑Am",
-      "url": "/{region}/{language}/build-your-can-am.html",
-      "title": "Build your Can‑Am"
+      "label": "Find a dealer",
+      "url": "/{region}/{language}/shopping-tools/find-a-dealer.html",
+      "title": ""
     },
     {
       "label": "Promotions",
-      "url": "/{region}/{language}/promotions.html",
-      "title": "ALL OFF-ROAD VEHICLE DEALS & OFFERS"
+      "url": "/{region}/{language}/promotions/snowmobiles/set-your-location.html",
+      "title": ""
     },
     {
-      "label": "Find A Dealer",
-      "url": "/{region}/{language}/dealer-near-me.html",
-      "title": "Find a dealer"
-    },
-    {
-      "label": "Discover Can‑Am",
-      "url": "/{region}/{language}/discover-can-am.html",
-      "title": "Discover Can‑Am"
-    }
-  ],
-  "fi": [
-    {
-      "label": "SSV",
-      "url": "/off-road/{region}/{language}/mallit/ssv.html",
-      "title": "Käynnistä kone ja tee enemmän"
-    },
-    {
-      "label": "ATV",
-      "url": "/off-road/{region}/{language}/mallit/monkijat.html",
-      "title": "Tehokkaat mönkijät"
-    },
-    {
-      "label": "KOLMIPYÖRÄISET",
-      "url": "/on-road/{region}/en/models/3-wheel-vehicles.html",
-      "title": "Can‑Am 3-Wheel Vehicles"
-    },
-    {
-      "label": "MOOTTORIPYÖRÄt",
-      "url": "/on-road/{region}/en/models/motorcycles.html",
-      "title": "Can-Am All-Electric Motorcycles"
-    },
-    {
-      "label": "Lisävarusteet, osat ja vaatteet",
-      "url": "/{region}/{language}/lisavarusteet-osat-vaatteet.html",
-      "title": "Can-Amin lisävarusteet, osat ja vaatteet"
-    },
-    {
-      "label": "SUUNNITTELE OMASI",
-      "url": "/{region}/{language}/rakenna-oma-can-am.html",
-      "title": "Rakenna oma Can-Am"
-    },
-    {
-      "label": "Kampanjat",
-      "url": "/{region}/{language}/kampanjat.html",
-      "title": "Can-Amin kampanjat ja tarjoukset"
-    },
-    {
-      "label": "Jälleenmyyjä lähellä minua",
-      "url": "/{region}/{language}/laheinen-jalleenmyyja.html",
-      "title": "Etsi jälleenmyyjä"
-    },
-    {
-      "label": "Tutustu",
-      "url": "/{region}/{language}/tutustu-can-amiin.html",
-      "title": "Tutustu Can-Amiin"
+      "label": "Shopping Tools",
+      "url": "/{region}/{language}/shopping-tools.html",
+      "title": ""
     }
   ]
 }

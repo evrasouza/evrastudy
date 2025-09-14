@@ -4,6 +4,83 @@
       "label": "Personal Watercraft",
       "url": "/{region}/{language}/models/personal-watercrafts.html",
       "title": ""
+    },
+    {
+      "label": "Pontoons",
+      "url": "/{region}/{language}/pontoons.html",
+      "title": ""
+    },
+    {
+      "label": "Build your own",
+      "url": "/{region}/{language}/shopping-tools/customize-your-own.html",
+      "title": ""
+    },
+    {
+      "label": "Promotions",
+      "url": "/{region}/{language}/promotions.html",
+      "title": ""
+    },
+    {
+      "label": "Find a dealer",
+      "url": "/{region}/{language}/shopping-tools/find-a-dealer.html",
+      "title": ""
+    },
+    {
+      "label": "Discover Sea‑Doo",
+      "url": "/{region}/{language}/sea-doo-life.html",
+      "title": ""
+    },
+    {
+      "label": "Owner Zone",
+      "url": "/{region}/{language}/owner-zone.html",
+      "title": ""
+    },
+    {
+      "label": "Shopping Tools",
+      "url": "/{region}/{language}/shopping-tools.html",
+      "title": ""
+    }
+  ],
+  "fr": [
+    {
+      "label": "Motomarines",
+      "url": "/{region}/{language}/modeles/motomarines.html",
+      "title": ""
+    },
+    {
+      "label": "Pontons",
+      "url": "/{region}/{language}/pontons.html",
+      "title": ""
+    },
+    {
+      "label": "Configurez le vôtre",
+      "url": "/{region}/{language}/outils-de-magasinage/personnalisez-le-votre.html",
+      "title": ""
+    },
+    {
+      "label": "Promotions",
+      "url": "/{region}/{language}/promotions.html",
+      "title": ""
+    },
+    {
+      "label": "Trouvez un concessionnaire",
+      "url": "/{region}/{language}/outils-de-magasinage/trouvez-votre-concessionnaire.html",
+      "title": ""
+    },
+    {
+      "label": "Découvrir Sea‑Doo",
+      "url": "/{region}/{language}/la-vie-sea-doo.html",
+      "title": ""
+    },
+    {
+      "label": "Propriétaires",
+      "url": "/{region}/{language}/proprietaires.html",
+      "title": ""
+    },
+    {
+      "label": "Outils de magasinage",
+      "url": "/{region}/{language}/outils-de-magasinage.html",
+      "title": ""
     }
   ]
 }

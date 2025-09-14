@@ -1,0 +1,212 @@
+{
+  "en": [
+    {
+      "label": "Models",
+      "url": "/{region}/{language}/models.html",
+      "title": ""
+    },
+    {
+      "label": "Discover Lynx",
+      "url": "/{region}/{language}/we-are-lynx.html",
+      "title": ""
+    },
+    {
+      "label": "Customize your own",
+      "url": "/{region}/{language}/shopping-tools/customize-your-own.html",
+      "title": ""
+    },
+    {
+      "label": "Accessories & Apparel",
+      "url": "/{region}/{language}/accessories-apparel.html",
+      "title": ""
+    },
+    {
+      "label": "Find a dealer",
+      "url": "/{region}/{language}/shopping-tools/find-a-dealer.html",
+      "title": ""
+    },
+    {
+      "label": "Shopping Tools",
+      "url": "/{region}/{language}/shopping-tools.html",
+      "title": ""
+    },
+    {
+      "label": "Owner Zone",
+      "url": "/{region}/{language}/owner-zone.html",
+      "title": ""
+    },
+    {
+      "label": "Promotions",
+      "url": "/{region}/{language}/promotions/snowmobiles/set-your-location.html",
+      "title": ""
+    }
+  ],
+  "fr": [
+    {
+      "label": "Modèles",
+      "url": "/{region}/{language}/modeles.html",
+      "title": ""
+    },
+    {
+      "label": "Découvrir Lynx",
+      "url": "/{region}/{language}/devenez-lynx.html",
+      "title": ""
+    },
+    {
+      "label": "Personnalisez le vôtre",
+      "url": "/{region}/{language}/outils-de-magasinage/personnalisez-le-votre.html",
+      "title": ""
+    },
+    {
+      "label": "Accessoires et équipements",
+      "url": "/{region}/{language}/accessoires-et-equipements.html",
+      "title": ""
+    },
+    {
+      "label": "Trouvez un concessionnaire",
+      "url": "/{region}/{language}/outils-de-magasinage/trouvez-votre-concessionnaire.html",
+      "title": ""
+    },
+    {
+      "label": "Outils de magasinage",
+      "url": "/{region}/{language}/outils-de-magasinage.html",
+      "title": ""
+    },
+    {
+      "label": "Zone propriétaire",
+      "url": "/{region}/{language}/proprietaires.html",
+      "title": ""
+    },
+    {
+      "label": "Promotions",
+      "url": "/{region}/{language}/promotions.html",
+      "title": ""
+    }
+  ],
+  "sv": [
+    {
+      "label": "Modeller",
+      "url": "/{region}/{language}/modeller.html",
+      "title": ""
+    },
+    {
+      "label": "Bygg din modell",
+      "url": "/{region}/{language}/utrusta-din-egen.html",
+      "title": ""
+    },
+    {
+      "label": "Tillbehör & förarutrustning",
+      "url": "/{region}/{language}/tillbehor-utrustning.html",
+      "title": ""
+    },
+    {
+      "label": "Upptäck Lynx",
+      "url": "/{region}/{language}/we-are-lynx.html",
+      "title": ""
+    },
+    {
+      "label": "Ägare",
+      "url": "/{region}/{language}/agaromrade.html",
+      "title": ""
+    },
+    {
+      "label": "Sök återförsäljare",
+      "url": "/{region}/{language}/sok-aterforsaljare.html",
+      "title": ""
+    },
+    {
+      "label": "Köpfunktioner",
+      "url": "/{region}/{language}/kopverktyg.html",
+      "title": ""
+    },
+    {
+      "label": "Erbjudanden",
+      "url": "/{region}/{language}/erbjudanden.html",
+      "title": ""
+    }
+  ],
+  "fi": [
+    {
+      "label": "Mallit",
+      "url": "/{region}/{language}/mallit.html",
+      "title": ""
+    },
+    {
+      "label": "Suunnittele omasi",
+      "url": "/{region}/{language}/ajoneuvon-kokoonpano.html",
+      "title": ""
+    },
+    {
+      "label": "Lisävarusteet & Ajovarusteet",
+      "url": "/{region}/{language}/lisavarusteet-varusteet.html",
+      "title": ""
+    },
+    {
+      "label": "Tutustu Lynxiin",
+      "url": "/{region}/{language}/we-are-lynx.html",
+      "title": ""
+    },
+    {
+      "label": "Omistajat",
+      "url": "/{region}/{language}/omistajat.html",
+      "title": ""
+    },
+    {
+      "label": "Etsi jälleenmyyjä",
+      "url": "/{region}/{language}/etsi-jalleenmyyja.html",
+      "title": ""
+    },
+    {
+      "label": "Suunnittele ja osta",
+      "url": "/{region}/{language}/suunnittele-ja-osta.html",
+      "title": ""
+    },
+    {
+      "label": "Tarjoukset",
+      "url": "/{region}/{language}/tarjoukset.html",
+      "title": ""
+    }
+  ],
+  "no": [
+    {
+      "label": "Modeller",
+      "url": "/{region}/{language}/modeller.html",
+      "title": ""
+    },
+    {
+      "label": "Bygg din Egen",
+      "url": "/{region}/{language}/bygg-din-egen.html",
+      "title": ""
+    },
+    {
+      "label": "Tilbehør & Kjøreutstyr",
+      "url": "/{region}/{language}/tilbehor-utstyr.html",
+      "title": ""
+    },
+    {
+      "label": "Oppdag Lynx",
+      "url": "/{region}/{language}/we-are-lynx.html",
+      "title": ""
+    },
+    {
+      "label": "Eiere",
+      "url": "/{region}/{language}/eiere.html",
+      "title": ""
+    },
+    {
+      "label": "Finn en forhandler",
+      "url": "/{region}/{language}/finn-en-forhandler.html",
+      "title": ""
+    },
+    {
+      "label": "Kjøpshjelp",
+      "url": "/{region}/{language}/kjops-hjelp.html",
+      "title": ""
+    },
+    {
+      "label": "Kampanjer",
+      "url": "/{region}/{language}/kampanjer.html",
+      "title": ""
+    }
+  ]
+}
