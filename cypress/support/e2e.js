@@ -1,6 +1,8 @@
 import './commands';
 import 'cypress-xpath';
 import 'cypress-axe'
+import 'cypress-mochawesome-reporter/register';
+
 
 Cypress.on('window:before:load', (win) => {
   Object.defineProperty(win, 'dataLayer', {
