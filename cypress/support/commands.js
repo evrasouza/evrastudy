@@ -196,7 +196,7 @@ Cypress.Commands.add('checkJQueryVersion', (expectedVersion) => {
 
     win.document.body.appendChild(popup);
 
-    cy.wait(2000);
+    //cy.wait(2000);
 
     cy.document().then((doc) => {
       const infoBanner = doc.createElement('div');
@@ -220,7 +220,7 @@ Cypress.Commands.add('checkJQueryVersion', (expectedVersion) => {
       doc.body.appendChild(infoBanner);
     });
 
-    cy.screenshot(passed ? 'jquery_passed_viewport' : 'jquery_failed_viewport', { capture: 'viewport' });
+    //cy.screenshot(passed ? 'jquery_passed_viewport' : 'jquery_failed_viewport', { capture: 'viewport' });
     expect(version).to.eq(expectedVersion);
   });
 });
