@@ -165,3 +165,62 @@ Cypress.Commands.add('openMainMenu', (device, mobileBreakpoint, mobileMenuButton
     cy.clickBrandLogo();
   }
 });
+
+// teste de jquery
+Cypress.Commands.add('checkJQueryVersion', (expectedVersion) => {
+  cy.window().then((win) => {
+    const version = win.jQuery().jquery;
+    const passed = version === expectedVersion;
+
+    // Popup visual
+    const popup = win.document.createElement('div');
+    popup.style.position = 'fixed';
+    popup.style.top = '20%';
+    popup.style.right = '20px';
+    popup.style.transform = 'none';
+    popup.style.backgroundColor = passed ? '#4CAF50' : '#f44336';
+    popup.style.color = '#fff';
+    popup.style.padding = '20px';
+    popup.style.fontSize = '20px';
+    popup.style.fontWeight = 'bold';
+    popup.style.borderRadius = '10px';
+    popup.style.boxShadow = '0 0 15px rgba(0,0,0,0.5)';
+    popup.style.zIndex = 9999;
+    popup.style.textAlign = 'center';
+    popup.style.minWidth = '300px';
+    popup.style.maxWidth = '600px';
+
+    popup.textContent = passed
+      ? `✅ jQuery version check passed! Version found: ${version}`
+      : `❌ jQuery version check failed! Expected: ${expectedVersion}, Found: ${version}`;
+
+    win.document.body.appendChild(popup);
+
+    cy.wait(2000);
+
+    cy.document().then((doc) => {
+      const infoBanner = doc.createElement('div');
+      infoBanner.id = 'cypress-info-banner';
+      infoBanner.style.position = 'fixed';
+      infoBanner.style.bottom = '0';
+      infoBanner.style.left = '0';
+      infoBanner.style.width = '100%';
+      infoBanner.style.backgroundColor = 'rgba(0,0,0,0.7)';
+      infoBanner.style.color = 'white';
+      infoBanner.style.fontSize = '12px';
+      infoBanner.style.padding = '5px';
+      infoBanner.style.zIndex = '9999';
+      infoBanner.style.fontFamily = 'Arial, sans-serif';
+      infoBanner.style.textAlign = 'right';
+
+      const date = new Date();
+      const formattedDate = date.toLocaleString();
+      infoBanner.innerText = `URL: ${doc.location.href} | Date: ${formattedDate}`;
+
+      doc.body.appendChild(infoBanner);
+    });
+
+    cy.screenshot(passed ? 'jquery_passed_viewport' : 'jquery_failed_viewport', { capture: 'viewport' });
+    expect(version).to.eq(expectedVersion);
+  });
+});
