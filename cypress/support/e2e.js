@@ -1,7 +1,9 @@
 import './commands';
 import 'cypress-xpath';
 import 'cypress-axe'
-import 'cypress-mochawesome-reporter/register';
+require('@shelex/cypress-allure-plugin');
+// ou, se usar import:
+// import '@shelex/cypress-allure-plugin';
 
 
 Cypress.on('window:before:load', (win) => {

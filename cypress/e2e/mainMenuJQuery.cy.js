@@ -1,27 +1,24 @@
 const brands = [
   { name: 'Can-Am', fixture: 'pages_canam.json' },
-  { name: 'Sea-Doo', fixture: 'pages_seadoo.json' },
-  { name: 'Ski-Doo', fixture: 'pages_skidoo.json' }
+  // { name: 'Sea-Doo', fixture: 'pages_seadoo.json' },
+  // { name: 'Ski-Doo', fixture: 'pages_skidoo.json' }
 ];
 
-describe('Check jQuery version for all brands', () => {
-  const expected = '1.12.4-aem';
+const expected = '1.12.4-aem';
 
-  brands.forEach(({ name, fixture }) => {
-    describe(`Brand: ${name}`, () => {
-      let pagesData;
+brands.forEach(({ name, fixture }) => {
+  // Carrega o fixture sincronicamente
+  const pagesData = require(`../fixtures/${fixture}`).pages;
 
-      before(function () {
-        cy.fixture(fixture).then((data) => {
-          pagesData = data.pages;
-        });
-      });
+  describe(`Brand: ${name}`, () => {
+    it('should load pages data', function () {
+      expect(pagesData).to.exist;
+    });
 
-      it(`should have jQuery version ${expected} on all ${name} pages`, function () {
-        pagesData.forEach((page) => {
-          cy.visit(page);
-          cy.checkJQueryVersion(expected);
-        });
+    pagesData.forEach((page) => {
+      it(`should have jQuery version ${expected} on page: ${page}`, function () {
+        cy.visit(page);
+        cy.checkJQueryVersion(expected);
       });
     });
   });

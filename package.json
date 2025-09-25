@@ -20,6 +20,8 @@
   "homepage": "https://bitbucket.org/brpdigital/sdet#readme",
   "description": "",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.41.2",
+    "allure-commandline": "^2.34.1",
     "axe-core": "^4.10.3",
     "cypress": "^14.5.4",
     "cypress-axe": "^1.7.0",

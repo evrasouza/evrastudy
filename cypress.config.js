@@ -1,9 +1,10 @@
 const { defineConfig } = require("cypress");
+const allureWriter = require('@shelex/cypress-allure-plugin/writer');
 
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
-      require('cypress-mochawesome-reporter/plugin')(on);
+      allureWriter(on, config);
       on('task', {
         log(message) {
           console.log(message)
@@ -17,17 +18,8 @@ module.exports = defineConfig({
         }
         return launchOptions;
       });
+      return config;
     },
-    // reporter
-    reporter: 'cypress-mochawesome-reporter',
-    reporterOptions: {
-      reportDir: 'cypress/reports',
-      charts: true,
-      reportPageTitle: 'Relatório de Testes Cypress',
-      embeddedScreenshots: true, // embute screenshots no HTML
-      inlineAssets: true         // gera 1 HTML independente (recommended)
-    },
-    // garante screenshots/vídeo
     video: true,
     screenshotOnRunFailure: true,
     hideXHR: true,
