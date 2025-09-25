@@ -1,9 +1,7 @@
 import './commands';
 import 'cypress-xpath';
 import 'cypress-axe'
-require('@shelex/cypress-allure-plugin');
-// ou, se usar import:
-// import '@shelex/cypress-allure-plugin';
+import '@shelex/cypress-allure-plugin';
 
 
 Cypress.on('window:before:load', (win) => {
